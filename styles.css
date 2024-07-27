@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: teal;
+    padding: 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/17/22/35/banner-1988257_1280.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#newTask {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid lightgreen;
+    border-radius: 20px;
+}
+
+#addButton {
+    padding: 10px 20px;
+    margin-left: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: lightgreen;
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+#addButton:hover {
+    background-color: lightseagreen;
+}
+
+#todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;    
+    padding: 10px;
+    background-color: lightgray;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-transform: capitalize;
+}
+
+.todo-item.completed .taskText {
+    text-decoration: line-through;
+    color: crimson;
+}
+
+.taskText {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.dltButton {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dltButton:hover {
+    background-color: #c82333;
+}
